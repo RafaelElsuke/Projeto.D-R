@@ -1,26 +1,89 @@
 <!DOCTYPE html>
-<html lang="pt-br"> <head>
+<html lang="pt-br"> 
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Portfolio</title>
     <link rel="stylesheet" href="p1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="p1.js">
 </head>
 <body>
-
+ 
     <header class="custom-header">
         <nav class="nav-container">
-            <img id="logo" src="img/aba81890c9140e10deb348a754dc8496d4140858428d2fdf64aa4b0e2988f208.svg" alt="Logo">
+            <div>
+                <img id="logo" src="img/aba81890c9140e10deb348a754dc8496d4140858428d2fdf64aa4b0e2988f208.svg" alt="Logo">    
+            </div>
             
             <div class="nav-links">
-                <a href="#">Portfólio</a>
-                <a href="#">Serviços</a>
                 <a href="#">Sobre</a>
+                <a href="#">Serviços</a>
                 <a href="#">Contato</a>
+                <a href="#">Portfólio</a> 
             </div>
+            <div class="btn-link">
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
         </nav>
     </header>
+    <section class="sobre">
+        <h1>Sobre</h1>
+        <p>Falar sobre a gente</p>
+        <button class="btn-whatsapp">Saber mais</button>
+    </section>
+    
+    <section class="serviços">
+        <h4>Serviços</h4>
+     <div class="cards">
+        <div class="card">
+         <img src="imagem1.jpeg" alt="" class="img-servico" />
+          <h3>Landing page</h3>
+          <p>Presença constante e apoio emocional em todas as fases do parto.</p><br>
+          <a href="" class="btn-whatsapp">Saber Mais</a>
+        </div>
+        <div class="card">
+         <img src="imagem1.jpeg" alt="" class="img-servico" />
+          <h3>Landing page</h3>
+          <p>Presença constante e apoio emocional em todas as fases do parto.</p><br>
+          <a href="" class="btn-whatsapp">Saber Mais</a>
+        </div>
+        <div class="card">
+         <img src="imagem1.jpeg" alt="" class="img-servico" />
+          <h3>Landing page</h3>
+          <p>Presença constante e apoio emocional em todas as fases do parto.</p><br>
+          <a href=""class="btn-whatsapp">Saber Mais</a>
+        </div>
+    </div>
+    </section>
+    
+    
+    <section class="trabalho">
+        <h2>Trabalhos</h2>
+        <div class="carousel-container">
+        <div class="carousel-card">
+            <img src="img/alfa.png" alt="Landing page 1">
+            <h5></h5>
+        </div>
+        <div class="carousel-card">
+            <img src="img/alfa.png" alt="Landing page 2">
+            <h5></h5>
+        </div>
+        <div class="carousel-card">
+            <img src="img/beta.png" alt="Landing page 3">
+            <h5></h5>
+        </div>
+        </div>
+        <div class="carousel-container" id="carousel"></div>  
+    </section>
+    <footer class="ft">
+        <h1>Contatos</h1>
+        <p>Criado por Dluan e Rafael</p>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-regular fa-envelope"></i>
+</footer>
 
 </body>
 </html>
-
-
