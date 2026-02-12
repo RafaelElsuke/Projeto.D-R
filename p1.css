@@ -167,23 +167,19 @@ margin-bottom: 10px;
 
 .carousel-container {
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
     gap: 20px;
     padding: 20px;
     width: 100%;
-    scrollbar-width: none;
-    /* Remova o scroll-snap-type: x mandatory; aqui para o giro ficar fluido */
 }
 .carousel-container::-webkit-scrollbar{
     display: none;
 }
-.carousel-card{
-    flex: 0 0 80%;
-    scroll-snap-align: center;
+.carousel-card {
+    min-width: 70%;
     background-color: white;
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 .carousel-card img{
     width: 100%;
