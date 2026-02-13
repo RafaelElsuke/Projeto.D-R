@@ -14,10 +14,3 @@ function autoScroll() {
 
 let timer = setInterval(autoScroll, delay);
 
-carousel.addEventListener('mouseenter', () => {
-    clearInterval(timer);
-});
-
-carousel.addEventListener('mouseleave', () => {
-    timer = setInterval(autoScroll, delay);
-});

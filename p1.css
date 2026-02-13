@@ -1,9 +1,17 @@
 #logo{
-height: 250px;
+height: 80px;
 margin-left: 50px;
+}
+html,body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 body{
    background-color: #a8c2caa4;
+   font-family: 'Open sans', serif;
+   line-height: auto;
 }
 * {
     margin: 0;
@@ -27,12 +35,12 @@ body{
 .nav-links {
     text-decoration: none;
     color: black;            
-    font-weight: 600;      
+    font-weight:normal;      
     text-transform: uppercase;
-    font-size: 32px;         
+    font-size: 16px;         
     font-family: sans-serif; 
     transition: 0.3s;
-    gap: 80px;
+    gap: 30px;
     display: flex; 
     flex-grow: 1;
     justify-content: center;
@@ -46,19 +54,6 @@ a{
     color: black;
     
 }
-i{
-    font-size: 52px;
-    display: flex; 
-    flex-grow: 0.1;
-}
-.ft{
-    background-color: #ffedbc;
-    font-family: sans-serif; 
-    text-align: center;
-    font-size: 12px;
-    margin-top: 0;
-
-}
 
 /* seção sobre  */
 /*#a8c2ca = azul , #ffedb= bege, #f5856c = vermelhor quase laranja*/ 
@@ -68,24 +63,27 @@ i{
     background-color: #a8c2ca;
 }
 .sobre h1 {
-font-family: 'Playfair Display',serif;
-font-size: 4rem;
-margin-bottom: 10px;
+font-family:'Times New Roman', Times, serif;
+font-size: 60px;
+font-weight: normal;
 }
 .sobre p{
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    color: #333;
+    font-size: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px;
 }
 .btn-whatsapp{
     display: inline-block;
     background-color: #f5856c;
-    color: #333;
+    color:black;
     padding: 12px 25px;
     border-radius: 25px;
     text-decoration: none;
-    font-weight: 800;
+    font-weight: normal;
     transition:background 0.6s;
+    font-size: 25px;
 }
 .btn-whatsapp:hover{
     background-color: #ed3d15;
@@ -95,14 +93,16 @@ margin-bottom: 10px;
 .serviços{
     text-align: center;
     padding: 80px 20px;
-    font-family:'Playfair Display',serif;
+    font-family:'Times New Roman', Times, serif;;
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
 /* titulo da seção serviços*/
 h4{
-    font-size: 4rem;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
 }
 
 .cards {
@@ -126,7 +126,7 @@ h4{
 .card {
   background: #fff;
   padding: 25px;
-  border-radius: 15px;
+  border-radius: 25px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   transition: transform 0.3s;
   text-align: center;
@@ -136,11 +136,19 @@ h4{
   transform: translateY(-5px);
 }
 .img-servico {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  width: 300px;
+  height: 180px;
+  border-radius: 5%;
   object-fit: cover;
   margin-bottom: 15px;
+  display: inline-block;
+  margin-inline: auto;
+}
+.card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px; /* Espaço antes do botão Saber Mais */
 }
 
 
@@ -153,16 +161,11 @@ h4{
     
 }
 .trabalho h2 {
-font-family: 'Playfair Display',serif;
-font-size: 4rem;
+font-family: 'Times New Roman', Times, serif;
+font-size:60px;
 margin-bottom: 10px;
+font-weight: normal;
 }
-.trabalho p{
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
 /* carrossel*/
 
 .carousel-container {
@@ -185,3 +188,48 @@ margin-bottom: 10px;
     width: 100%;
     border-radius: 10px;
 }
+
+/*Pagina sobre cards*/
+main{
+    flex: 1;
+}
+.img-sobre{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  display: inline-block;
+  margin-inline: auto;
+}
+.carde {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 200px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*footer*/
+.ft{
+    padding: 15px;
+    text-align: center;
+    margin-top:40px;
+    background-color: #FCEFB4;
+
+}
+.ft p{
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+}
+i{
+    font-size: 28px;
+    display: flex; 
+    flex-grow: 0.1;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
