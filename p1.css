@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #logo{
 height: 250px;
 margin-left: 50px;
@@ -185,3 +186,192 @@ margin-bottom: 10px;
     width: 100%;
     border-radius: 10px;
 }
+=======
+#logo{
+height: 250px;
+margin-left: 50px;
+}
+body{
+   background-color: #a8c2caa4;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.custom-header{
+    background-color: #ffedbc;
+    padding:5px;
+    width: 100%;
+    
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+    
+}
+.nav-links {
+    text-decoration: none;
+    color: black;            
+    font-weight: 600;      
+    text-transform: uppercase;
+    font-size: 32px;         
+    font-family: sans-serif; 
+    transition: 0.3s;
+    gap: 80px;
+    display: flex; 
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.nav-link:last-child{
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+i{
+    font-size: 52px;
+    display: flex; 
+    flex-grow: 0.1;
+}
+.ft{
+    background-color: #ffedbc;
+    font-family: sans-serif; 
+    text-align: center;
+    font-size: 12px;
+    margin-top: 0;
+
+}
+
+/* seção sobre  */
+/*#a8c2ca = azul , #ffedb= bege, #f5856c = vermelhor quase laranja*/ 
+.sobre{
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #a8c2ca;
+}
+.sobre h1 {
+font-family: 'Playfair Display',serif;
+font-size: 4rem;
+margin-bottom: 10px;
+}
+.sobre p{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+.btn-whatsapp{
+    display: inline-block;
+    background-color: #f5856c;
+    color: #333;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 800;
+    transition:background 0.6s;
+}
+.btn-whatsapp:hover{
+    background-color: #ed3d15;
+}
+
+/* serviços */
+.serviços{
+    text-align: center;
+    padding: 80px 20px;
+    font-family:'Playfair Display',serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* titulo da seção serviços*/
+h4{
+    font-size: 4rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*configuração pra centralizar os cards*/
+.container-card{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: -50px;
+}
+
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+.img-servico {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+
+/* Trabalhos */
+.trabalho{
+    text-align: center;
+    padding: 50px;
+    background-color: #a8c2ca92;
+    margin-bottom: 0;
+    
+}
+.trabalho h2 {
+font-family: 'Playfair Display',serif;
+font-size: 4rem;
+margin-bottom: 10px;
+}
+.trabalho p{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* carrossel*/
+
+.carousel-container {
+    display: flex;
+    overflow-x: hidden;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+.carousel-container::-webkit-scrollbar{
+    display: none;
+}
+.carousel-card {
+    min-width: 70%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+.carousel-card img{
+    width: 100%;
+    border-radius: 10px;
+}
+>>>>>>> b874cfdf56aa33879a4de9ed03959f18164fff0c
