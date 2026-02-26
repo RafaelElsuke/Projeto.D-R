@@ -54,7 +54,16 @@ a{
     color: black;
     
 }
-
+nav {
+  background-color: rgba(255, 243, 200, 0.7); /* Cor de fundo com transparência */
+  backdrop-filter: blur(10px); /* Isso cria o efeito de vidro fosco */
+  -webkit-backdrop-filter: blur(10px); /* Suporte para Safari */
+  
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
 /* seção sobre  */
 /*#a8c2ca = azul , #ffedb= bege, #f5856c = vermelhor quase laranja*/ 
 .sobre{
@@ -68,11 +77,10 @@ font-size: 32px;
 font-weight: normal;
 }
 .sobre p{
-    font-size: 16px;
+    font-size: 18px;
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
-    padding: 25px;
 }
 .btn-whatsapp{
     display: inline-block;
@@ -92,7 +100,7 @@ font-weight: normal;
 /* serviços */
 .serviços{
     text-align: center;
-    padding: 80px 20px;
+    padding: 150px 20px;
     font-family:'Times New Roman', Times, serif;;
     font-size: 24px;
     margin-bottom: 10px;
@@ -179,9 +187,9 @@ font-weight: normal;
     display: none;
 }
 .carousel-card {
-    min-width: 70%;
+    min-width: 50%;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 8px;
     padding: 20px;
 }
 .carousel-card img{
