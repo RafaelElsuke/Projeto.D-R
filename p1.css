@@ -1,6 +1,6 @@
 #logo{
 height: 80px;
-margin-left: 50px;
+margin-left: 0;
 }
 html,body{
     height: 100%;
@@ -28,8 +28,10 @@ body{
 .nav-container{
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-right: 50px;
+    justify-content: space-between;
+    padding: 0 40px;
+    width: 100%;
+    height: 80px;
     
 }
 .nav-links {
@@ -55,14 +57,16 @@ a{
     
 }
 nav {
-  background-color: rgba(255, 243, 200, 0.7); /* Cor de fundo com transparência */
-  backdrop-filter: blur(10px); /* Isso cria o efeito de vidro fosco */
-  -webkit-backdrop-filter: blur(10px); /* Suporte para Safari */
+  background-color: rgba(255, 243, 200, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   
   position: fixed;
   top: 0;
+  left: 0;      /* ADICIONE ISSO: Força o início na esquerda total */
+  right: 0;     /* ADICIONE ISSO: Força o término na direita total */
+  width: 100%;  /* Garante 100% da largura da tela */
   z-index: 1000;
-  width: 100%;
 }
 /* seção sobre  */
 /*#a8c2ca = azul , #ffedb= bege, #f5856c = vermelhor quase laranja*/ 
