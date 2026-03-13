@@ -1,0 +1,25 @@
+/* COLOCAR AS IMAGENS DO MESMO TAMANHO */
+lique para reagir
+:img{
+object-fit: contain;
+object-fit: cover;
+width: 100%;
+height: 200px;
+}
+////////////////////////////////
+
+CORES DA PAGINA
+#0e1d44b4
+#f5856c = vermelhor quase laranja*/
+#1e3a8a;
+#2563eb;-- texto link nav
+#504f4c -- serviços impares
+#484f4d --sobre pares
+#20201f -- cards
+CORES TEXTO 
+BLACK
+CORES CARDS 
+#0b1633
+
+/SEPARAR LINHAS SUBLINHADAS DA PALAVRA/
+ text-underline-offset: 5px;

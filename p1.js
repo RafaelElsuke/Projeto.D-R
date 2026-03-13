@@ -18,3 +18,4 @@ function autoScroll() {
 }
 
 let timer = setInterval(autoScroll, delay);
+
