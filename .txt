@@ -23,4 +23,7 @@ CORES CARDS
 
 /SEPARAR LINHAS SUBLINHADAS DA PALAVRA/
  text-underline-offset: 5px;
- 
+
+
+ /link abre em outra aba/
+ target="_blank"
