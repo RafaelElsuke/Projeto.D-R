@@ -71,7 +71,7 @@ h4 {
 }
 
 #logo {
-    width: 60px;
+    width: 100px;
 }
 
 .nav-links {
@@ -81,17 +81,19 @@ h4 {
 
 .nav-links a {
     text-decoration: none;
-    color:white;
+    color: white;
     font-size: 20px;
     font-family: sans-serif;
 }
-nav a:hover{
+
+nav a:hover {
     transform: scale(1.5);
     color: #f5f5f5;
-    text-decoration:underline #f5856c;  
+    text-decoration: underline #f5856c;
     text-underline-offset: 5px;
 
 }
+
 .btn-link {
     display: flex;
     gap: 20px;
@@ -178,6 +180,7 @@ nav a:hover{
     width: 320px;
 
 }
+
 /* animação dos cards sobre*/
 .card-inner {
     position: relative;
@@ -222,6 +225,7 @@ nav a:hover{
     transform: rotateY(180deg);
     text-align: center;
 }
+
 /* img sobre*/
 .img-sobre {
     width: 160px;
@@ -266,31 +270,96 @@ nav a:hover{
     margin-top: 40px;
     color: white;
 }
-.ft a{
+
+.ft a {
     color: white;
 }
 
 
 /* RESPONSIVO */
 
+/* --- AJUSTES GERAIS DE SEGURANÇA --- */
+* {
+    box-sizing: border-box;
+    /* Impede que padding quebre a largura */
+}
+
+img {
+    max-width: 100%;
+    /* Imagens nunca vazam da tela */
+    height: auto;
+}
+
+/* --- TELA DE 1366px --- */
+@media screen and (max-width: 1366px) {
+    :root {
+        font-size: 15px;
+        /* Reduz levemente a escala de tudo que usa 'rem' */
+    }
+
+    .container,
+    section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+/* --- TABLETS E TELAS MÉDIAS (Até 1024px) --- */
+@media screen and (max-width: 1024px) {
+
+    .hero,
+    .about-content {
+        flex-direction: column;
+        /* Foto em cima, texto embaixo */
+        text-align: center;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* Apenas 2 colunas */
+    }
+}
+
+/* MÉDIAS (768px)*/
 @media(max-width:768px) {
 
     .nav-links {
         display: none;
     }
 
+    .navbar {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        
+    }
+    #logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        
+
+    }
+    .btn-link{
+    display: none;
+}
+
+   
     section {
         padding: 60px 20px;
     }
-    .carousel-card{
-         min-width: 400px;
-         border-radius: 10px;
+
+    .carousel-card {
+        min-width: 400px;
+        border-radius: 10px;
 
     }
-    .carousel-container{
+
+    .carousel-container {
         max-width: 100%;
     }
-    h4{
+
+    h4 {
         margin-top: 10px;
     }
 }
