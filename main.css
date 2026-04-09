@@ -7,7 +7,7 @@
 
 /*variaveis*/
 :root {
-    --primary: #f5856c;
+    --primary: #f66b4c;
     --secondary: #2563eb;
 
     --text: BLACK;
@@ -29,7 +29,9 @@ body {
     color: var(--text);
     background: var(--background);
 }
-
+i{
+    font-size: 25px;
+}
 img {
     max-width: 100%;
     display: block;
@@ -150,6 +152,10 @@ nav a:hover {
     margin-top: 10px;
 
 }
+.btn-whatsapp:hover{
+    transform: scale(1.1);
+    background-color: #fe3001;
+}
 
 /* animação dos cards serviços*/
 
@@ -242,13 +248,12 @@ nav a:hover {
 
     display: flex;
     gap: 20px;
-    overflow-x: hidden;
+    overflow-x: auto;
     padding: 20px;
     max-width: 90%;
     margin: auto;
 
 }
-
 .carousel-card {
     min-width: 800px;
     border-radius: 10px;
@@ -256,9 +261,23 @@ nav a:hover {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 
 }
-
 .carousel-card img {
     width: 100%;
+}
+/* Esconde a barra por padrão */
+.carousel-container::-webkit-scrollbar {
+  height: 0px;
+}
+
+/* Mostra ao passar o mouse */
+.carousel-container:hover::-webkit-scrollbar {
+  height: 5px;
+}
+
+/* Estilo da barra */
+.carousel-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #0270a8,#fc1105,#0270a8);
+  border-radius: 10px;
 }
 
 /* FOOTER */
@@ -422,3 +441,63 @@ img {
         display: none; /* Esconde o texto no celular para não poluir a tela */
     }
 }
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+.card {
+  animation: wave 1.5s ease-in-out infinite;
+}
+.card:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.card:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+
+
+.link {
+  position: relative;
+  
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  white-space: nowrap;
+}
+
+
+.link::after {
+  content: "";
+  position: absolute;
+  left: 45%;
+  bottom: -4px;
+  width: 10%;
+  height: 2px;
+
+  background: linear-gradient(to right, #0270a8,#fc1105,#0270a8);
+
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.link:hover::after {
+  transform: scaleX(1);
+}
+
+
+

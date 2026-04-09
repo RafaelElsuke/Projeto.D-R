@@ -16,7 +16,8 @@ function autoScroll() {
     }
 }
 
-// Pausar ao passar o mouse
+
+/*/ Pausar ao passar o mouse
 carousel.addEventListener('mouseenter', () => {
     clearInterval(timer);
 });
@@ -24,4 +25,4 @@ carousel.addEventListener('mouseenter', () => {
 // Retomar ao sair o mouse
 carousel.addEventListener('mouseleave', () => {
     timer = setInterval(autoScroll, delay);
-});
+}); */

@@ -1,0 +1,92 @@
+.servico-detalhe {
+    padding-top: 85px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    min-height: 80vh;
+}
+
+/* Garante que o H1 não tenha margem extra no topo */
+.servico-detalhe h1 {
+    margin-top: 0;
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.servico-detalhe .introducao {
+    font-size: 1.1rem;
+    color: black;
+    margin-bottom: 40px;
+    border-bottom:1px solid#0270a8; 
+    padding-bottom: 20px;
+}
+
+.servico-detalhe section {
+    padding: 30px 0;
+}
+
+.servico-detalhe ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto 30px auto;
+}
+
+.servico-detalhe ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+    text-align: center;
+}
+
+.servico-detalhe ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    font-size: 0.8em;
+}
+
+.servico-detalhe .btn-whatsapp {
+    margin: 30px auto;
+    display: block;
+    width: fit-content;
+}
+
+/* Remove qualquer padding-top grande do body nas páginas de serviço */
+body {
+    padding-top: 0 !important;
+}
+.btn-whatsappp {
+
+    display: inline-block;
+    background: linear-gradient(to left, #fc11059f,#0271a89d);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 10px;
+
+}
+.btn-whatsappp:hover{
+    transform: scale(1.1);
+    background: linear-gradient(to left, #fc1105,#0271a8);
+}
+.alo{
+   position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 100px;
+    right: 250px; 
+    color: black;
+    text-align: center;
+    font-size: 60px;
+    z-index: 1000; /* Garante que fique por cima de tudo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+   
+}
