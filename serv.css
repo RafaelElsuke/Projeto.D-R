@@ -87,6 +87,57 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
-   
+    text-decoration: none; 
+}
+
+
+.cube-text {
+  display: inline-block;
+  font-size: 22px;
+  color: black;
+  perspective: 800px;
+  animation: rotateText 4s infinite ease-in-out;
+}
+
+@keyframes rotateText {
+  0% {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotateY(90deg);
+    opacity: 0.3;
+  }
+  100% {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+
+@media(max-width:768px) {
+    .alo{
+   position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 97rem;
+    right: 15px; 
+    color: black;
+    text-align: right;
+    font-size: 60px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    text-decoration: none;       
+}
+
+.servico-detalhe {
+    width: 320px;
+}
+li,h2{
+    margin-right:20px;
+}
+
+
+
 }
